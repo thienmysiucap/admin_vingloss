@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/dashboarh.css">
+    <link rel="stylesheet" href="./icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./asset/toast.css">
+
+</head>
+<body>
+    <section id="menu">
+        <div class="logo">
+            <img src="./img/demologo.png" alt="">
+        </div>
+
+        <div class="item">
+            <ul>
+                <li class="tab-item active"><i class="ti-pie-chart"></i>Dashboard</li>
+                <li class="tab-item"><i class="ti-user"></i>Users Account</li>
+                <li class="tab-item"><i class="ti-dropbox-alt"></i>Products</li>
+                <li class="tab-item"><i class="ti-shopping-cart-full"></i>Orders</li>
+                <li class="tab-item"><i class="ti-pulse"></i>Charts</li>
+                <li class="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section id="interface">
+
+        <div class="nav">
+            <div class="n1">
+                <div class="search">
+                    <i class="ti-search"></i>
+                    <input type="text" name="" placeholder="Search" id="">
+                </div>
+            </div>
+
+            <div class="profile">
+                <i class="ti-bell"></i>
+                <img src="./img/user.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- dashbar-tab -->
+        <div class="panel-tab active">
+
+            <h2 class="i-name">Wellcome, ThienMy</h2>
+
+            <div class="values">
+                <div class="val-box">
+                    <i class="ti-user"></i>
+                    <div>
+                        <h3>8,999</h3>
+                        <span>New Customers</span>
+                    </div>
+                </div>
+
+                <div class="val-box">
+                    <i class="ti-shopping-cart"></i>
+                    <div>
+                        <h3>9999</h3>
+                        <span>Total Orders</span>
+                    </div>
+                </div>
+
+                <div class="val-box">
+                    <i class="ti-package"></i>
+                    <div>
+                        <h3>888,8</h3>
+                        <span>Products Sell</span>
+                    </div>
+                </div>
+
+                <div class="val-box">
+                    <i class="ti-money"></i>
+                    <div>
+                        <h3>$999,9</h3>
+                        <span>This Month</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- --------Chart panel -------->
+
+            <!-- <div class="chart-panel">
+
+
+                <div class="box-chart">
+                    <div class="box-chart-header">
+                        <h3>Số lượng bán ra</h3>
+                    </div>
+                    <div class="bar-chart">
+                        <canvas id="myChart1"></canvas>
+                    </div>
+                </div>
+
+                <div class="box-chart">
+                    <div class="box-chart-header">
+                        <h3>Doanh thu</h3>
+                    </div>
+                    <div class="line-chart">
+                        <canvas id="myChart2"></canvas>
+                    </div>
+                </div>
+
+            </div>
+
+            --------End Chart panel ------ -->
+
+
+
+
+            <!-- -------Treding panel -------->
+            <div class="trending-product-panel">
+                <div class="header-trending-panel">
+                    <h3>Trending Products</h3>
+                </div>
+
+                <div class="body-trending-panel">
+
+                    <div class="trending-container">
+                        <div class="product-img">
+                            <img src="./img/product1.jpg" alt="">
+                        </div>
+
+                        <div class="body-content">
+                            <div class="headingt-title">
+                                <h6>Collection Blue Wines</h6>
+                                <span class="green-text">
+                                    <strong>$350.00</strong>
+                                </span>
+                            </div>
+
+                            <div class="headingt-title">
+                            <p>
+                                Orders
+                                <span class="red-text">15</span>
+
+                                <p>
+                                Income
+                                <span class="red-text">$6000</span>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="trending-container">
+                        <div class="product-img">
+                            <img src="./img/product6.jpg" alt="">
+                        </div>
+
+                        <div class="body-content">
+                            <div class="headingt-title">
+                                <h6>Collection Blue Wines</h6>
+                                <span class="green-text">
+                                    <strong>$350.00</strong>
+                                </span>
+                            </div>
+
+                            <div class="headingt-title">
+                            <p>
+                                Orders
+                                <span class="red-text">15</span>
+
+                                <p>
+                                Income
+                                <span class="red-text">$6000</span>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trending-container">
+                        <div class="product-img">
+                            <img src="./img/product3.jpg" alt="">
+                        </div>
+
+                        <div class="body-content">
+                            <div class="headingt-title">
+                                <h6>Collection Blue Wines</h6>
+                                <span class="green-text">
+                                    <strong>$350.00</strong>
+                                </span>
+                            </div>
+
+                            <div class="headingt-title">
+                            <p>
+                                Orders
+                                <span class="red-text">15</span>
+
+                                <p>
+                                Income
+                                <span class="red-text">$6000</span>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="trending-container">
+                        <div class="product-img">
+                            <img src="./img/product4.jpg" alt="">
+                        </div>
+
+                        <div class="body-content">
+                            <div class="headingt-title">
+                                <h6>Collection Blue Wines</h6>
+                                <span class="green-text">
+                                    <strong>$350.00</strong>
+                                </span>
+                            </div>
+
+                            <div class="headingt-title">
+                            <p>
+                                Orders
+                                <span class="red-text">15</span>
+
+                                <p>
+                                Income
+                                <span class="red-text">$6000</span>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+
+                </div>
+            </div>
+
+            <!----------End Treding panel -------->
+
+            <!-----------Table Order------------>
+
+            <div class="board">
+                <div class="board-header">
+                    <h3>Recently Placed Orders</h3>
+
+                    <div class="sort-bar">
+                        <select id="sort_list">
+                            <option class="sort_item" value="default_sort">Default sorting</option>
+                            <option class="sort_item" value="popular_sort">Sort by Customer Name</option>
+                            <option class="sort_item" value="average_sort">Sort by Order Status</option>
+                            <option class="sort_item" value="average_sort">Sort by Price</option>
+                            <option class="sort_item" value="average_sort">Sort by Location</option>
+                            <option class="sort_item" value="average_sort">Delivery Time</option>
+                        </select>
+                    </div>
+
+                </div>
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <td>Order ID</td>
+                            <td>Order Name</td>
+                            <td>Customer Name</td>
+                            <td>Location</td>
+                            <td>Order Status</td>
+                            <td>Delivered Time</td>
+                            <td>Price</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="order-id">
+                            <p>1</p>
+                            </td>
+
+                            <td class="order-name">
+                                <p>Collection Red Wines x1</p>
+                            </td>
+
+                            <td class="order-cusname">
+                                <p>Lê Hoàng Thiện Mỹ</p>
+                            </td>
+                                
+                            <td class="location">
+                                <p>Đồng Tháp</p>
+                            </td>
+
+                            <td class="order-status js-add-delivery" >
+                                <p class="delivered">Delivered</p>
+                            </td>
+                            <td class="order-time">
+                                <p>10:05 29/09/2023</p>
+                            </td>
+
+                            <td class="order-price">
+                                <p>199$</p>
+                            </td>
+                        </tr>
+                        
+                    
+                    </tbody>
+                    
+                    <tbody>
+                        <tr>
+                            <td class="order-id">
+                            <p>2</p>
+                            </td>
+
+                        <td class="order-name">
+                                <p>Collection Blue Wines x1</p>
+                            </td>
+
+                            <td class="order-cusname">
+                                <p>Nguyễn Thành Danh</p>
+                            </td>
+                                
+                            <td class="location">
+                                <p>Đồng Tháp</p>
+                            </td>
+
+                            <td class="order-status js-add-delivery" >
+                                <p class="pending">Pending</p>
+                            </td>
+                            <td class="order-time">
+                                <p>10:05 29/09/2023</p>
+                            </td>
+
+                            <td class="order-price">
+                                <p>229$</p>
+                            </td>
+                        </tr>
+                        
+                    
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td class="order-id">
+                            <p>3</p>
+                            </td>
+
+                        <td class="order-name">
+                                <p>Collection Blue Wines x1</p>
+                            </td>
+
+                            <td class="order-cusname">
+                                <p>Nguyễn Thành Danh</p>
+                            </td>
+                                
+                            <td class="location">
+                                <p>Đồng Tháp</p>
+                            </td>
+
+                            <td class="order-status js-add-delivery" >
+                                <p class="cancel ">Cancelled</p>
+                            </td>
+                            <td class="order-time">
+                                <p>10:05 29/09/2023</p>
+                            </td>
+
+                            <td class="order-price">
+                                <p>229$</p>
+                            </td>
+                        </tr>
+                        
+                    
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td class="order-id">
+                            <p>3</p>
+                            </td>
+
+                        <td class="order-name">
+                                <p>Collection Blue Wines x1</p>
+                            </td>
+
+                            <td class="order-cusname">
+                                <p>Nguyễn Thành Danh</p>
+                            </td>
+                                
+                            <td class="location">
+                                <p>Đồng Tháp</p>
+                            </td>
+
+                            <td class="order-status js-add-delivery" >
+                                <p class="in-transport">In transport</p>
+                            </td>
+                            <td class="order-time">
+                                <p>10:05 29/09/2023</p>
+                            </td>
+
+                            <td class="order-price">
+                                <p>229$</p>
+                            </td>
+                        </tr>
+                        
+                    
+                    </tbody>
+                </table>
+
+                <div class="box-pagination">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#" >2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+
+            </div>
+            <!--End Table Order -->
+        </div>
+
+        <!-- user-account-tab -->
+        <div class="panel-tab">
+            <div class="board-user">
+                <div class="board-header">
+                    <h3>Customer Account List</h3>
+                    <div class="sort-bar">
+                        <select id="sort_list">
+                            <option class="sort_item" value="default_sort">Default sorting</option>
+                            <option class="sort_item" value="popular_sort">Sort by Name</option>
+                            <option class="sort_item" value="average_sort">Sort by Bill</option>
+                        </select>
+                    </div>
+                </div>
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <td>ID</td>
+                            <td>Users Name</td>
+                            <td>Birth date</td>
+                            <td>Location</td>
+                            <td>Phone Number </td>
+                            <td>Bill</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+    
+                        <tr>
+                            <td id="customer-id">1</td>
+    
+                            <td class="people">
+                                <img src="./img/customer.png" alt="">
+                                <div class="people-des">
+                                    <h5>Thiện Mỹ</h5>
+                                    <p>thienmy230703@gmail.com</p>
+                                </div>
+                            </td>
+    
+                            <td class="cus-bdate">
+                                <p>23/07/2003</p>
+                            </td>
+    
+                            <td class="people-des">
+                                <p>12 Nguyên Thị Minh Khai, Phường 1, TP Cao Lãnh, Đồng Tháp</p>
+                            </td>
+    
+                            <td class="cus-phone"><p>0923290954</p></td>
+    
+                            <td class="cus-bill">
+                                <p>199$</p>
+                            </td>
+    
+                            <td class="edit js-edit-acc"><a href="#">Edit</a></td>
+                            <td class="delete js-delete-acc"><a href="#">Delete</a></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="customer-id">1</td>
+    
+                            <td class="people">
+                                <img src="./img/customer.png" alt="">
+                                <div class="people-des">
+                                    <h5>Thiện Mỹ</h5>
+                                    <p>thienmy230703@gmail.com</p>
+                                </div>
+                            </td>
+    
+                            <td class="cus-bdate">
+                                <p>23/07/2003</p>
+                            </td>
+    
+                            <td class="people-des">
+                                <p>12 Nguyên Thị Minh Khai, Phường 1, TP Cao Lãnh, Đồng Tháp</p>
+                            </td>
+    
+                            <td class="cus-phone"><p>0923290954</p></td>
+    
+                            <td class="cus-bill">
+                                <p>199$</p>
+                            </td>
+    
+                            <td class="edit js-edit-acc"><a href="#">Edit</a></td>
+                            <td class="delete js-delete-acc"><a href="#">Delete</a></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="customer-id">1</td>
+    
+                            <td class="people">
+                                <img src="./img/customer.png" alt="">
+                                <div class="people-des">
+                                    <h5>Thiện Mỹ</h5>
+                                    <p>thienmy230703@gmail.com</p>
+                                </div>
+                            </td>
+    
+                            <td class="cus-bdate">
+                                <p>23/07/2003</p>
+                            </td>
+    
+                            <td class="people-des">
+                                <p>12 Nguyên Thị Minh Khai, Phường 1, TP Cao Lãnh, Đồng Tháp</p>
+                            </td>
+    
+                            <td class="cus-phone"><p>0923290954</p></td>
+    
+                            <td class="cus-bill">
+                                <p>199$</p>
+                            </td>
+    
+                            <td class="edit js-edit-acc"><a href="#">Edit</a></td>
+                            <td class="delete js-delete-acc"><a href="#">Delete</a></td>
+                        </tr>
+                </table>
+                
+                <div class="box-pagination">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#" >2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Begin Modal-Edit -->
+            <div class="modal-edit-acc-user js-modal-edit-acc">
+                <div class="modal-edit-acc-user-container js-modal-account-container">
+                    <!--Begin Close-button -->
+                    <div class="modal-edit-acc-user-close js-modal-close-acc">
+                        <i class="ti-close"></i>
+                    </div>
+                    <!--End Close-button -->
+                        <header class="modal-edit-acc-user-header">
+                            <i class="ti-user" style="padding: 16px"></i>
+                            Edit Customer Account
+                        </header>
+                        <div class="modal-edit-acc-user-body">
+                            <h3 class="cus-id-edit">Edit ID: 1</h3>
+
+                                <div class="name-input">                        
+                                    <label for="name-cus" class="modal-edit-acc-user-label">Customer Name:</label>
+                                    <input type="text" name="" id="name" class="modal-edit-acc-user-input" required>
+                                </div>
+
+                                <div class="birday-input">
+                                    <label for="cus-birtdate"class="modal-edit-acc-user-label" >Birhdate:</label>
+                                    <input type="date" id="price" class="modal-edit-acc-user-input" placeholder="dd/mm/yyyy" required>
+                                </div>
+                            
+                                <div class="email-input">
+                                    <label for="cus-email"class="modal-edit-acc-user-label">E-mail:</label>
+                                    <input type="email" id="origin" class="modal-edit-acc-user-input" required>
+                                </div>
+
+                                <div class="phone-input">
+                                    <label for="cus-phone"class="modal-edit-acc-user-label">Phone Number:</label>
+                                    <input type="text" id="origin" class="modal-edit-acc-user-input" required>
+                                </div>
+                          
+                             <div class="locate-input">
+                                <label for="cus-locate"class="modal-edit-acc-user-label">Location</label>
+                                <input type="text"  class="modal-edit-acc-user-input" required>
+                            </div>
+                            
+                               
+                            <div class="bill-input">
+                                <label for="cus-bill"class="modal-label">Bill:</label>
+                                <input type="text" id="origin" class="modal-edit-acc-user-input" required>
+                            </div>
+
+                            <div class="img-input">
+                                <label for="img-product"class="modal-edit-acc-user-label">Change image Customer:</label>
+                                <input type="file">
+                            </div>
+    
+                            <div class="btn-div">
+                                <button onclick="showSuccessToast(); "class="save-info-cus-btn js-modal-savechange">
+                                <i class="ti-save"></i>
+                                    Save change
+                                </button>
+    
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--End Modal-Edit -->
+    
+            <!--Begin Modal-Delete-->
+            <div class="modal-delete js-modal-acc-delete">
+                <div class="modal-delete-container js-modal-acc-delete-container">               
+                    <!--End Close-button -->
+                        <header class="modal-delete-header">
+                            <p class="head-delete-arlert">Account Confirmation</p>
+                        </header>
+                        <div class="modal-delete-body">
+                            
+                            <div class="body-alert">
+                                <p>Are you sure you want to delete this account?</p>
+                            </div>
+                            <hr>
+    
+                            <div class="btn-option">
+                                <button class="cancel-account js-modal-acc-delete-cancel">Cancel</button>
+                                <button onclick="showErrorToast();" class="delete-account js-modal-acc-deleted">Delete</button>
+                            </div>
+                            
+                            </div>
+    
+                        </div>
+                    </div>
+        </div>
+
+         <!-- product-tab -->
+         <div class="panel-tab">
+            <div class="board-product">
+                <div class="board-product-header">
+                    <h3>Product List</h3>
+                    <div class="sort-bar">
+                        <select id="sort_list">
+                            <option class="sort_item" value="default_sort">Default sorting</option>
+                            <option class="sort_item" value="popular_sort">Sort by Products Name</option>
+                            <option class="sort_item" value="average_sort">Sort by Quantity</option>
+                            <option class="sort_item" value="average_sort">Sort by Price</option>
+                            <option class="sort_item" value="average_sort">Sort by Origin</option>
+    
+    
+                        </select>
+                    </div>
+                </div>
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <td>ID</td>
+                            <td>Products Name</td>
+                            <td>Price</td>
+                            <td>Quantity </td>
+                            <td>Origin</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td class="product-id">1</td>
+                            <td class="product">
+                                <img src="./img/image-product-05-min-300x300.jpg" alt="">
+                                <div class="product-des">
+                                    <h5>Collection Red Wines</h5>
+                                </div>
+                            </td>
+    
+                            <td class="product-price">
+                                <h5>399$</h5>
+                                <p>499$</p>
+                            </td>
+    
+                            <td class="quantity"><p>99</p></td>
+    
+                            <td class="origin">
+                                <p>Pháp</p>
+                            </td>
+    
+                            <td class="edit js-add-edit-product"><a href="#">Edit</a></td>
+                            <td class="delete js-delete-product"><a href="#">Delete</a></td>
+                        </tr>
+                        
+                       
+                    </tbody>
+    
+                    <tbody>
+                        <tr>
+                            <td class="product-id">1</td>
+                            <td class="product">
+                                <img src="./img/image-product-05-min-300x300.jpg" alt="">
+                                <div class="product-des">
+                                    <h5>Collection Red Wines</h5>
+                                </div>
+                            </td>
+    
+                            <td class="product-price">
+                                <h5>399$</h5>
+                                <p>499$</p>
+                            </td>
+    
+                            <td class="quantity"><p>99</p></td>
+    
+                            <td class="origin">
+                                <p>Pháp</p>
+                            </td>
+    
+                            <td class="edit js-add-edit-product"><a href="#">Edit</a></td>
+                            <td class="delete js-delete-product"><a href="#">Delete</a></td>
+                        </tr>
+                        
+                       
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td class="product-id">1</td>
+                            <td class="product">
+                                <img src="./img/image-product-05-min-300x300.jpg" alt="">
+                                <div class="product-des">
+                                    <h5>Collection Red Wines</h5>
+                                </div>
+                            </td>
+    
+                            <td class="product-price">
+                                <h5>399$</h5>
+                                <p>499$</p>
+                            </td>
+    
+                            <td class="quantity"><p>99</p></td>
+    
+                            <td class="origin">
+                                <p>Pháp</p>
+                            </td>
+    
+                            <td class="edit js-add-edit-product"><a href="#">Edit</a></td>
+                            <td class="delete js-delete-product"><a href="#">Delete</a></td>
+                        </tr>
+                        
+                       
+                    </tbody>
+                </table>
+    
+                 <!-- ADD product button -->
+                 <div class="btn_add">
+                    <button class="add-poduct-btn js-add-product"><i class="ti-plus"></i> Thêm sản phẩm</button>
+                 </div>
+                 <!--  end ADD product button -->
+    
+                <div class="box-pagination">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#" >2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+                
+            </div>
+    
+             
+    
+        <!--Begin Modal-add -->
+        <div class="modal-add-product js-modal-add">
+            <div class="modal-add-product-container js-modal-add-container">
+                <!--Begin Close-button -->
+                <div class="modal-close js-modal-add-close">
+                    <i class="ti-close"></i>
+                </div>
+               <!--End Close-button -->
+                <header class="modal-add-product-header">
+                    <i class="ti-bag" style="padding: 16px"></i>
+                    Add Products
+                </header>
+                <div class="modal-add-product-body">
+                    <div class="product-name-input">
+                        <label for="product-name" class="modal-label">Product Name:</label>
+                        <input type="text" name="" id="name" class="modal-input" required>
+                    </div>
+    
+                    <div class="price-quantity-div">
+    
+                        <div class="price-input">
+                            <label for="product-price "class="modal-label" >Price:</label>
+                            <input type="text" id="price" class="modal-input" placeholder="100$" required>
+                        </div>
+    
+                        <div class="quantity-input">
+                            <label for="product-quantity"class="modal-label">Quantity</label>
+                            <input type="number" min="0" placeholder="01" id="quantity" class="modal-input" required>
+                        </div>
+                    </div>
+                    <div class="origin-input">
+                        <label for="product-origin"class="modal-label">Origins</label>
+                        <input type="text" id="origin" class="modal-input" required>
+                    </div>
+    
+                    <div class="img-input">
+                        <label for="img-product"class="modal-label">Choose Product Image:</label>
+                        <input type="file">
+                    </div>
+                    
+                    <div class="btn-div">
+    
+                        <button class="clear-info-product-btn" >
+                            <i class="ti-brush"></i>
+                                Clear 
+                            </button>
+    
+                        <button onclick="showSuccessProductToast();" class="add-info-product-btn js-modal-saveadd">
+                        <i class="ti-check"></i>
+                            Add Product
+                        </button>
+    
+                    </div>
+    
+                </div>
+                
+            </div>
+        </div>
+        <!--End Modal-add -->
+    
+        <!--Begin Modal-Edit -->
+        <div class="modal-edit-product js-modal-edit">
+            <div class="modal-edit-product-container js-modal-edit-container">
+                <!--Begin Close-button -->
+                <div class="modal-edit-product-close js-modal-edit-close">
+                    <i class="ti-close"></i>
+                </div>
+               <!--End Close-button -->
+                <header class="modal-edit-product-header">
+                    <i class="ti-marker" style="padding: 16px"></i>
+                    Edit Infomation Product
+                </header>
+                <div class="modal-edit-product-body">
+                    <div class="edit-id"><h3>ID Edit: 1</h3></div>
+                    <div class="name-input">
+                        <label for="product-name" class="modal-label">Product Name:</label>
+                        <input type="text" name="" id="name" class="modal-input" required>
+                    </div>
+    
+                    <div class="price-quantity-div">
+    
+                        <div class="price-input">
+                            <label for="product-price "class="modal-label" >Price:</label>
+                            <input type="text" id="price" class="modal-input" placeholder="100$" required>
+                        </div>
+    
+                        <div class="quantity-input">
+                            <label for="product-quantity"class="modal-label">Quantity</label>
+                            <input type="number" min="0" placeholder="01" id="quantity" class="modal-input" required>
+                        </div>
+                    </div>
+                    <div class="origin-input">
+                        <label for="product-origin"class="modal-label">Origins</label>
+                        <input type="text" id="origin" class="modal-input" required>
+                    </div>
+    
+                    <div class="img-input">
+                        <label for="img-product"class="modal-label">Choose Product Image:</label>
+                        <input type="file">
+                    </div>
+                    
+                    <div class="btn-div">
+    
+                        <button class="clear-info-product-btn" >
+                            <i class="ti-brush"></i>
+                                Clear 
+                            </button>
+    
+                        <button onclick="showSuccessProductToast();" class="add-info-product-btn js-modal-product-savechange">
+                        <i class="ti-save"></i>
+                            Save Info
+                        </button>
+    
+                    </div>
+    
+                </div>
+                
+            </div>
+        </div>
+        <!--End Modal-Edit -->
+
+        <!--Begin Modal-Delete-->
+        <div class="modal-product-delete js-modal-product-delete">
+            <div class="modal-product-delete-container js-modal-product-delete-container">
+                <!--Begin Close-button -->
+            
+                <!--End Close-button -->
+                    <header class="modal-product-delete-header">
+                        <p class="head-delete-arlert">Product Confirmation</p>
+                    </header>
+                    <div class="modal-prodcut-delete-body">
+                        
+                        <div class="body-alert">
+                            <p>Are you sure you want to delete this product?</p>
+                        </div>
+                        <hr>
+
+                        <div class="btn-option">
+                            <button class="cancel-product js-modal-product-delete-cancel">Cancel</button>
+                            <button onclick="showErrorProductToast();" class="delete-product js-modal-product-deleted">Delete</button>
+                        </div>
+                        
+                        </div>
+
+                    </div>
+                    
+                </div>
+             <!--End Modal-Delete -->
+
+        </div>
+
+         <!-- Order-tab -->
+         <div class="panel-tab">
+            
+            <div class="fav-order-panel">
+                <div class="fav-order-header">
+                    <h3>Order Status</h3>
+                </div>
+                <div class="fav-order-body">
+    
+                    <div class="progress-box">
+                        <div class="circular-progress-1">
+                            <span class="progress-value-1">0%</span>
+                        </div>
+    
+                        <span class="text">Pending</span>
+                    </div>
+    
+                    <div class="progress-box">
+                        <div class="circular-progress-2">
+                            <span class="progress-value-2">0%</span>
+                        </div>
+    
+                        <span class="text">Delivered</span>
+                    </div>
+    
+                    <div class="progress-box">
+                        <div class="circular-progress-3">
+                            <span class="progress-value-3">0%</span>
+                        </div>
+    
+                        <span class="text">In progress of delivery</span>
+                    </div>
+    
+                    <div class="progress-box">
+                        <div class="circular-progress-4">
+                            <span class="progress-value-4">0%</span>
+                        </div>
+    
+                        <span class="text">Cancelled</span>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- Table Pending -->
+    
+            <div class="board">
+                <div class="board-header">
+                    <h3>Pending Order List</h3>
+    
+                    <div class="sort-bar">
+                        <select id="sort_list">
+                            <option class="sort_item" value="default_sort">Default sorting</option>
+                            <option class="sort_item" value="popular_sort">Sort by Customer Name</option>
+                            <option class="sort_item" value="average_sort">Sort by Price</option>
+                            <option class="sort_item" value="average_sort">Sort by Location</option>
+                            <option class="sort_item" value="average_sort">Delivery Time</option>
+                        </select>
+                    </div>
+    
+                </div>
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <td>Order ID</td>
+                            <td>Order Name</td>
+                            <td>Customer Name</td>
+                            <td>Location</td>
+                            <td>Orders Time</td>
+                            <td>Price</td>
+                            <td>Approve Orders</td>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td class="order-id">
+                               <p>1</p>
+                            </td>
+    
+                            <td class="order-name">
+                                <p>Collection Red Wines x1</p>
+                            </td>
+    
+                            <td class="order-cusname">
+                                <p>Lê Hoàng Thiện Mỹ</p>
+                            </td>
+                                
+                            <td class="location">
+                                <p>Đồng Tháp</p>
+                            </td>
+    
+                            <td class="order-time">
+                                <p>10:05 29/09/2023</p>
+                            </td>
+    
+                            <td class="order-price">
+                                <p>199$</p>
+                            </td>
+    
+                            <td>
+                                <button onclick="showSuccessApproveToast();" class="active-pending"><i class="ti-check"></i></button>
+                                <button class="delete-pending js-delete-order"><i class="ti-close"></i></button>
+    
+                            </td>
+                        </tr>
+                    </tbody>
+    
+    
+                </table>
+                <div class="box-pagination">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#" >2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- Table Order -->
+    
+            <div class="board">
+                <div class="board-header">
+                    <h3>Order List</h3>
+    
+                    <div class="sort-bar">
+                        <select id="sort_list">
+                            <option class="sort_item" value="default_sort">Default sorting</option>
+                            <option class="sort_item" value="popular_sort">Sort by Customer Name</option>
+                            <option class="sort_item" value="average_sort">Sort by Order Status</option>
+                            <option class="sort_item" value="average_sort">Sort by Price</option>
+                            <option class="sort_item" value="average_sort">Sort by Location</option>
+                            <option class="sort_item" value="average_sort">Delivery Time</option>
+                        </select>
+                    </div>
+    
+                </div>
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <td>Order ID</td>
+                            <td>Order Name</td>
+                            <td>Customer Name</td>
+                            <td>Location</td>
+                            <td>Order Status</td>
+                            <td>Delivered Time</td>
+                            <td>Price</td>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td class="order-id">
+                               <p>1</p>
+                            </td>
+    
+                            <td class="order-name">
+                                <p>Collection Red Wines x1</p>
+                            </td>
+    
+                            <td class="order-cusname">
+                                <p>Lê Hoàng Thiện Mỹ</p>
+                            </td>
+                                
+                            <td class="location">
+                                <p>Đồng Tháp</p>
+                            </td>
+    
+                            <td class="order-status js-add-delivery" >
+                                <p class="delivered">Delivered</p>
+                            </td>
+                            <td class="order-time">
+                                <p>10:05 29/09/2023</p>
+                            </td>
+    
+                            <td class="order-price">
+                                <p>199$</p>
+                            </td>
+                        </tr>
+                        
+                       
+                    </tbody>
+                       
+                    <tbody>
+                        <tr>
+                            <td class="order-id">
+                               <p>2</p>
+                            </td>
+    
+                         <td class="order-name">
+                                <p>Collection Blue Wines x1</p>
+                            </td>
+    
+                            <td class="order-cusname">
+                                <p>Nguyễn Thành Danh</p>
+                            </td>
+                                
+                            <td class="location">
+                                <p>Đồng Tháp</p>
+                            </td>
+    
+                            <td class="order-status js-add-delivery" >
+                                <p class="pending">Pending</p>
+                            </td>
+                            <td class="order-time">
+                                <p>10:05 29/09/2023</p>
+                            </td>
+    
+                            <td class="order-price">
+                                <p>229$</p>
+                            </td>
+                        </tr>
+                        
+                       
+                    </tbody>
+    
+                    <tbody>
+                        <tr>
+                            <td class="order-id">
+                               <p>3</p>
+                            </td>
+    
+                         <td class="order-name">
+                                <p>Collection Blue Wines x1</p>
+                            </td>
+    
+                            <td class="order-cusname">
+                                <p>Nguyễn Thành Danh</p>
+                            </td>
+                                
+                            <td class="location">
+                                <p>Đồng Tháp</p>
+                            </td>
+    
+                            <td class="order-status js-add-delivery" >
+                                <p class="cancel ">Cancelled</p>
+                            </td>
+                            <td class="order-time">
+                                <p>10:05 29/09/2023</p>
+                            </td>
+    
+                            <td class="order-price">
+                                <p>229$</p>
+                            </td>
+                        </tr>
+                        
+                       
+                    </tbody>
+    
+                    <tbody>
+                        <tr>
+                            <td class="order-id">
+                               <p>3</p>
+                            </td>
+    
+                         <td class="order-name">
+                                <p>Collection Blue Wines x1</p>
+                            </td>
+    
+                            <td class="order-cusname">
+                                <p>Nguyễn Thành Danh</p>
+                            </td>
+                                
+                            <td class="location">
+                                <p>Đồng Tháp</p>
+                            </td>
+    
+                            <td class="order-status js-add-delivery" >
+                                <p class="in-transport">In transport</p>
+                            </td>
+                            <td class="order-time">
+                                <p>10:05 29/09/2023</p>
+                            </td>
+    
+                            <td class="order-price">
+                                <p>229$</p>
+                            </td>
+                        </tr>
+                        
+                       
+                    </tbody>
+                </table>
+    
+            <!--End Table Order -->
+    
+                <div class="box-pagination">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#" >2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+            </div>
+    
+        <!--Begin Modal-Delevery -->
+        <div class="modal-delivery js-modal">
+            <div class="modal-delivery-container js-modal-container">
+                <!--Begin Close-button -->
+                <div class="modal-delivery-close js-modal-close">
+                    <i class="ti-close"></i>
+                </div>
+               <!--End Close-button -->
+                <header class="modal-delivery-header">
+                    <i class="ti-truck" style="padding: 16px"></i>
+                    Tiến trình giao hàng
+                </header>
+                <div class="modal-delivery-body">
+                    <div class="steps">
+                        <div class="box-status">
+                            <span class="circle active">
+                                <img class="delivery-icon" src="./icon_img/order-delivery.png" alt="">
+                            </span>
+                            <p class="status-text active-text">Chờ xác nhận đơn hàng</p>
+                        </div>
+    
+                        <div class="box-status">
+                            <span class="circle">
+                                <img class="delivery-icon" src="./icon_img/tracking.png" alt="">
+                            </span>
+                            <p class="status-text">Đang vận chuyển</p>
+                        </div>
+    
+                        <div class="box-status">
+                            <span class="circle">
+                                <img class="delivery-icon" src="./icon_img/Thien mywine.png" alt="">
+                            </span>
+                            <p class="status-text">Giao hàng thành công</p>
+                        </div>
+    
+                        <div class="progress-bar">
+                            <span class="indicator"></span>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="prev" disabled >Prev</button>
+                        <button id="next">Next</button>
+                    </div>
+                </div>
+    
+                </div>    
+        </div>
+            <!--end Modal-Delevery -->
+
+            <!--Begin Modal-Delete-->
+            <div class="modal-order-delete js-modal-order-delete">
+                <div class="modal-order-delete-container js-modal-order-delete-container">               
+                    <!--End Close-button -->
+                        <header class="modal-order-delete-header">
+                            <p class="head-delete-arlert">Order Confirmation</p>
+                        </header>
+                        <div class="modal-order-delete-body">
+                            
+                            <div class="body-alert">
+                                <p>Are you sure you want to delete this Order</p>
+                            </div>
+                            <hr>
+
+                            <div class="btn-option">
+                                <button class="cancel-order js-modal-order-delete-cancel">Cancel</button>
+                                <button onclick="showErrorApproveToast();" class="delete-order js-modal-order-deleted">Delete</button>
+                            </div>
+                            
+                            </div>
+
+                        </div>
+                        
+                    </div>
+        </div>
+        <!--End Modal-Delete -->
+
+
+          <!-- chart-tab -->
+        <div class="panel-tab">
+
+            <div class="chart-panel">
+
+                <div class="box-chart">
+                    <div class="box-chart-header">
+                        <h3>Số lượng bán ra</h3>
+                    </div>
+                    <div class="bar-chart">
+                        <canvas id="myChart1"></canvas>
+                    </div>
+                </div>
+    
+                <div class="box-chart">
+                    <div class="box-chart-header">
+                        <h3>Doanh thu</h3>
+                    </div>
+                    <div class="line-chart">
+                        <canvas id="myChart2"></canvas>
+                    </div>
+                </div>
+    
+                <div class="box-chart">
+                    <div class="box-chart-header">
+                        <h3>Xuất xứ</h3>
+                    </div>
+                    <div class="pie-char">
+                        <canvas id="myChart3" ></canvas>
+                    </div>
+                </div>
+    
+                <div class="box-chart">
+                    <div class="box-chart-header">
+                        <h3>Khách hàng</h3>
+                    </div>
+                    <div class="doughnut-chart">
+                        <canvas id="myChart4"></canvas>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- JAVA SCRIPT-------------------------------------------------------------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="./JS/chart.js"></script>
+    <script src="./JS/user.js"></script>
+    <script src="./JS/product.js"></script>
+    <script src="./JS/orders.js"></script>
+    <script src="./JS/delivery.js"></script>
+    <script src="./JS/toast.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <div id="toast"></div>
+
+    <script>
+        function showSuccessToast() {
+            toast({
+            title: "Edit successful!",
+            message: "Chỉnh sửa thông tin thành công.",
+            type: "success",
+            duration: 5000
+            });
+        }
+
+        function showErrorToast() {
+            toast({
+            title: "Deleted!",
+            message: "Bạn vừa xóa một tài khoản người dùng.",
+            type: "error",
+            duration: 5000
+            });
+        }
+
+        function showSuccessProductToast() {
+            toast({
+            title: "Successful!",
+            message: "Thao tác thành công.",
+            type: "success",
+            duration: 5000
+            });
+        }
+
+        function showErrorProductToast() {
+            toast({
+            title: "Deleted!",
+            message: "Bạn vừa xóa một sản phẩm.",
+            type: "error",
+            duration: 5000
+            });
+        }
+
+        function showSuccessApproveToast() {
+            toast({
+            title: "Approved successful!",
+            message: "Đã duyệt đơn hàng.",
+            type: "success",
+            duration: 5000
+            });
+        }
+
+        function showErrorApproveToast() {
+            toast({
+            title: "Deleted!",
+            message: "Bạn vừa xóa một đơn hàng.",
+            type: "error",
+            duration: 5000
+            });
+        }
+
+        </script>
+
+
+
+
+    
+    <script>
+        const $ = document.querySelector.bind(document)
+        const $$ = document.querySelectorAll.bind(document)
+
+        const tabs = $$('.tab-item')
+        const panes = $$('.panel-tab')
+
+        tabs.forEach((tab, index)=>{
+            const pane = panes[index]
+
+            tab.onclick = function (){
+                $('.tab-item.active').classList.remove('active')
+                $('.panel-tab.active').classList.remove('active')
+
+
+                this.classList.add('active')
+                pane.classList.add('active')
+            }
+        })
+    </script>
+
+</body>
+</body>
+</html>
